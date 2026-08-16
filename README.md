@@ -8,7 +8,18 @@ Windows is the real host build and demonstration target. The final demo uses exa
 
 ## Evidence boundary
 
-macOS and Linux source/configuration checks executed on Windows are simulations only. They are never presented as native builds, signatures, notarization, VoiceOver sessions, or real-machine launch evidence. The included GitHub Actions workflow is the authorized path to create native artifacts on `windows-latest`, `macos-latest`, and `ubuntu-latest` after the repository owner publishes the source.
+As of 2026-08-16 the repository is published and the `cross-platform-release`
+workflow has produced native artifacts on all three official runners
+([run 31930760841](https://github.com/Filberte/offline-multimodal-retrieval/actions/runs/31930760841),
+tag `v1.0.0`): `flutter analyze`, the 140-case widget/accessibility suite, and
+`flutter build --release` passed on `windows-latest`, `macos-latest` (universal
+arm64 + x86_64 `.app`), and `ubuntu-latest` (x64 bundle).
+
+Remaining limits, stated plainly: the macOS/Linux artifacts are unsigned CI
+builds — code signing, notarization/Gatekeeper checks, VoiceOver sessions, and
+real-machine launch validation on Apple/Linux hardware have not been performed.
+Windows remains the fully validated demonstration baseline (built and executed
+on real hardware).
 
 ## Demo video
 
