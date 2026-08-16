@@ -1,0 +1,242 @@
+{
+  "weeks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "continuous_weeks_1_to_8": true,
+  "continuous_feed_chain": true,
+  "contributions": [
+    {
+      "week": 1,
+      "focus": "需求、环境、数据与风险基线",
+      "product_value": "定义离线、跨平台、无障碍和数据治理边界，并提供最终演示数据。",
+      "source_paths": [
+        "Week1_Deliverables",
+        "datasets/required_datasets"
+      ],
+      "evidence_paths": [
+        "Week1_Deliverables/01_Project_Requirements_Document.docx",
+        "datasets/required_datasets/README.md"
+      ],
+      "feeds_week": 2,
+      "source_status": [
+        {
+          "path": "Week1_Deliverables",
+          "present": true
+        },
+        {
+          "path": "datasets/required_datasets",
+          "present": true
+        }
+      ],
+      "evidence_status": [
+        {
+          "path": "Week1_Deliverables/01_Project_Requirements_Document.docx",
+          "present": true
+        },
+        {
+          "path": "datasets/required_datasets/README.md",
+          "present": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "week": 2,
+      "focus": "模块架构与多格式解析",
+      "product_value": "将 TXT/PDF/DOCX/JPG/PNG 转换为统一可索引记录。",
+      "source_paths": [
+        "Week8_Deliverables/src/week2_parser"
+      ],
+      "evidence_paths": [
+        "Week2_Deliverables/manager_submission/01_Week2_系统架构设计与技术设计文档.pdf"
+      ],
+      "feeds_week": 3,
+      "source_status": [
+        {
+          "path": "Week8_Deliverables/src/week2_parser",
+          "present": true
+        }
+      ],
+      "evidence_status": [
+        {
+          "path": "Week2_Deliverables/manager_submission/01_Week2_系统架构设计与技术设计文档.pdf",
+          "present": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "week": 3,
+      "focus": "本地多模态嵌入",
+      "product_value": "提供文本、图像和共享向量空间，并支持批处理与离线模型。",
+      "source_paths": [
+        "Week8_Deliverables/src/week3_embedding",
+        "Week3_Deliverables/models"
+      ],
+      "evidence_paths": [
+        "Week3_Deliverables/manager_submission/01_Week3_多模态嵌入引擎技术与验证报告.pdf"
+      ],
+      "feeds_week": 4,
+      "source_status": [
+        {
+          "path": "Week8_Deliverables/src/week3_embedding",
+          "present": true
+        },
+        {
+          "path": "Week3_Deliverables/models",
+          "present": true
+        }
+      ],
+      "evidence_status": [
+        {
+          "path": "Week3_Deliverables/manager_submission/01_Week3_多模态嵌入引擎技术与验证报告.pdf",
+          "present": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "week": 4,
+      "focus": "向量存储与混合检索",
+      "product_value": "组合 Chroma、关键词、语义排序、过滤与端到端检索。",
+      "source_paths": [
+        "Week8_Deliverables/src/week4_retrieval"
+      ],
+      "evidence_paths": [
+        "Week4_Deliverables/manager_submission/06_Week4_端到端功能与检索准确率报告.pdf"
+      ],
+      "feeds_week": 5,
+      "source_status": [
+        {
+          "path": "Week8_Deliverables/src/week4_retrieval",
+          "present": true
+        }
+      ],
+      "evidence_status": [
+        {
+          "path": "Week4_Deliverables/manager_submission/06_Week4_端到端功能与检索准确率报告.pdf",
+          "present": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "week": 5,
+      "focus": "Flutter UI 与无障碍",
+      "product_value": "提供资料库、搜索、结果、设置以及键盘、语义、高对比度和字体缩放。",
+      "source_paths": [
+        "Week8_Deliverables/app/offline_retrieval_ui"
+      ],
+      "evidence_paths": [
+        "Week5_Deliverables/final_submission/03_Week5_无障碍合规验证报告_WCAG2.1AA.pdf"
+      ],
+      "feeds_week": 6,
+      "source_status": [
+        {
+          "path": "Week8_Deliverables/app/offline_retrieval_ui",
+          "present": true
+        }
+      ],
+      "evidence_status": [
+        {
+          "path": "Week5_Deliverables/final_submission/03_Week5_无障碍合规验证报告_WCAG2.1AA.pdf",
+          "present": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "week": 6,
+      "focus": "集成、稳定性、性能与安全",
+      "product_value": "串联解析到 UI 的本地进程协议，建立缓存、压力、缺陷与数据安全门禁。",
+      "source_paths": [
+        "Week8_Deliverables/src/week6_integration"
+      ],
+      "evidence_paths": [
+        "Week6_Deliverables/final_submit_7_files/01_Week6_系统集成全量测试与性能优化技术报告.pdf"
+      ],
+      "feeds_week": 7,
+      "source_status": [
+        {
+          "path": "Week8_Deliverables/src/week6_integration",
+          "present": true
+        }
+      ],
+      "evidence_status": [
+        {
+          "path": "Week6_Deliverables/final_submit_7_files/01_Week6_系统集成全量测试与性能优化技术报告.pdf",
+          "present": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "week": 7,
+      "focus": "文档、开源合规与发布治理",
+      "product_value": "固化 API、安装维护、许可、发布预检和 500 项连续测试。",
+      "source_paths": [
+        "Week8_Deliverables/src/week7_release",
+        "Week8_Deliverables/docs"
+      ],
+      "evidence_paths": [
+        "Week7_Deliverables/final_submit_7_files/01_Week7_完整技术文档与维护指南.pdf"
+      ],
+      "feeds_week": 8,
+      "source_status": [
+        {
+          "path": "Week8_Deliverables/src/week7_release",
+          "present": true
+        },
+        {
+          "path": "Week8_Deliverables/docs",
+          "present": true
+        }
+      ],
+      "evidence_status": [
+        {
+          "path": "Week7_Deliverables/final_submit_7_files/01_Week7_完整技术文档与维护指南.pdf",
+          "present": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "week": 8,
+      "focus": "最终交付、演示与作品集",
+      "product_value": "形成 Windows 实机发布基线、跨平台构建流水线、600 项累计测试和完整移交。",
+      "source_paths": [
+        "Week8_Deliverables/src/week8_delivery",
+        "Week8_Deliverables/release"
+      ],
+      "evidence_paths": [
+        "Week8_Deliverables/README.md"
+      ],
+      "feeds_week": null,
+      "source_status": [
+        {
+          "path": "Week8_Deliverables/src/week8_delivery",
+          "present": true
+        },
+        {
+          "path": "Week8_Deliverables/release",
+          "present": true
+        }
+      ],
+      "evidence_status": [
+        {
+          "path": "Week8_Deliverables/README.md",
+          "present": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "all_contributions_present": true
+}

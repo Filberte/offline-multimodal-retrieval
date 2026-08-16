@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "TC-001",
+    "name": "empty_filters_have_no_chroma_where",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-002",
+    "name": "single_modality_filter_builds_single_clause",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-003",
+    "name": "single_content_type_filter_builds_single_clause",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-004",
+    "name": "multiple_exact_filters_build_and_clause",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-005",
+    "name": "path_contains_is_post_filter_only",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-006",
+    "name": "empty_filters_accept_any_metadata",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-007",
+    "name": "exact_filters_accept_matching_metadata",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-008",
+    "name": "exact_filters_reject_wrong_modality",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-009",
+    "name": "exact_filters_reject_missing_content_type",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-010",
+    "name": "path_filter_is_case_insensitive",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-011",
+    "name": "path_filter_rejects_missing_source_path",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-012",
+    "name": "default_search_query_is_valid",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-013",
+    "name": "blank_search_query_is_rejected",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-014",
+    "name": "zero_top_k_is_rejected",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-015",
+    "name": "top_k_above_limit_is_rejected",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-016",
+    "name": "negative_semantic_weight_is_rejected",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-017",
+    "name": "negative_keyword_weight_is_rejected",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-018",
+    "name": "zero_total_weight_is_rejected",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-019",
+    "name": "stored_record_uses_metadata_document_id",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-020",
+    "name": "stored_record_falls_back_to_item_id",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-021",
+    "name": "retrieval_hit_serializes_nested_metadata",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-022",
+    "name": "search_response_serializes_hits_and_warnings",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-023",
+    "name": "indexing_summary_success_without_failures",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-024",
+    "name": "indexing_summary_fails_with_embedding_failure",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_01_models.py"
+  },
+  {
+    "id": "TC-025",
+    "name": "tokenize_lowercases_english",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-026",
+    "name": "tokenize_preserves_apostrophe_and_underscore",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-027",
+    "name": "tokenize_preserves_numbers",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-028",
+    "name": "tokenize_splits_chinese_into_characters",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-029",
+    "name": "tokenize_empty_text_returns_empty_tuple",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-030",
+    "name": "bm25_rejects_nonpositive_k1",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-031",
+    "name": "bm25_rejects_below_range_b",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-032",
+    "name": "bm25_rejects_above_range_b",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-033",
+    "name": "bm25_ignores_blank_documents",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-034",
+    "name": "empty_bm25_index_returns_no_matches",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-035",
+    "name": "blank_query_returns_no_matches",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-036",
+    "name": "unmatched_query_returns_no_matches",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-037",
+    "name": "exact_terms_rank_relevant_document_first",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-038",
+    "name": "search_limit_truncates_matches",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-039",
+    "name": "equal_scores_use_item_id_for_stable_order",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-040",
+    "name": "repeated_query_term_increases_score",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_02_keyword.py"
+  },
+  {
+    "id": "TC-041",
+    "name": "zero_top_k_is_rejected",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-042",
+    "name": "negative_semantic_weight_is_rejected",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-043",
+    "name": "negative_keyword_weight_is_rejected",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-044",
+    "name": "zero_total_weight_is_rejected",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-045",
+    "name": "weights_are_normalized_before_fusion",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-046",
+    "name": "single_positive_semantic_candidate_scores_one",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-047",
+    "name": "single_negative_semantic_candidate_scores_zero",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-048",
+    "name": "equal_positive_semantic_scores_are_all_one",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-049",
+    "name": "equal_zero_semantic_scores_are_all_zero",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-050",
+    "name": "semantic_minmax_normalization_bounds_scores",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-051",
+    "name": "keyword_scores_are_normalized_by_positive_maximum",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-052",
+    "name": "nonpositive_keyword_scores_are_bounded_at_zero",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-053",
+    "name": "duplicate_semantic_candidates_keep_highest_score",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-054",
+    "name": "duplicate_keyword_candidates_keep_highest_score",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-055",
+    "name": "same_item_id_in_different_spaces_remains_distinct",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-056",
+    "name": "top_k_truncates_ranked_results",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-057",
+    "name": "tied_scores_use_file_name_then_item_id",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-058",
+    "name": "invalid_chunk_index_is_returned_as_none",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_03_ranking.py"
+  },
+  {
+    "id": "TC-059",
+    "name": "constructor_keeps_store_reference",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-060",
+    "name": "upsert_delegates_all_vectors",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-061",
+    "name": "semantic_search_passes_query_arguments",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-062",
+    "name": "semantic_search_converts_cosine_distance",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-063",
+    "name": "semantic_similarity_is_clamped_to_negative_one",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-064",
+    "name": "semantic_similarity_is_clamped_to_positive_one",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-065",
+    "name": "missing_query_fields_use_safe_defaults",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-066",
+    "name": "empty_query_row_returns_no_candidates",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-067",
+    "name": "first_query_row_extracts_nested_row",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-068",
+    "name": "first_query_row_handles_none",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-069",
+    "name": "safe_index_returns_default_for_short_array",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-070",
+    "name": "scan_rejects_unknown_space",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-071",
+    "name": "scan_rejects_nonpositive_limit",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-072",
+    "name": "scan_without_filters_uses_expected_include_fields",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-073",
+    "name": "scan_passes_where_and_limit",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-074",
+    "name": "delete_delegates_space_and_ids",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_04_repository.py"
+  },
+  {
+    "id": "TC-075",
+    "name": "constructor_rejects_nonpositive_batch_size",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-076",
+    "name": "constructor_rejects_nonpositive_candidate_multiplier",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-077",
+    "name": "index_paths_processes_single_text_file",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-078",
+    "name": "index_paths_processes_multiple_text_files",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-079",
+    "name": "index_directory_discovers_nested_files_recursively",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-080",
+    "name": "index_directory_can_disable_recursion",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-081",
+    "name": "missing_file_is_recorded_when_continuing",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-082",
+    "name": "missing_file_raises_in_strict_mode",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-083",
+    "name": "search_returns_relevant_file_first",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-084",
+    "name": "search_reports_nonnegative_elapsed_time",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-085",
+    "name": "search_warns_when_cross_modal_backend_is_absent",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-086",
+    "name": "search_has_no_warning_with_cross_modal_backend",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-087",
+    "name": "candidate_limit_has_minimum_of_twenty",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-088",
+    "name": "candidate_limit_scales_with_top_k",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-089",
+    "name": "extension_filter_is_passed_to_repository",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-090",
+    "name": "source_path_filter_is_applied_after_recall",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-091",
+    "name": "invalid_query_is_rejected_before_embedding",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-092",
+    "name": "candidate_count_deduplicates_semantic_and_keyword_match",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_05_service.py"
+  },
+  {
+    "id": "TC-093",
+    "name": "empty_benchmark_is_rejected",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_06_metrics.py"
+  },
+  {
+    "id": "TC-094",
+    "name": "case_without_relevant_ids_is_rejected",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_06_metrics.py"
+  },
+  {
+    "id": "TC-095",
+    "name": "perfect_first_rank_produces_full_metrics",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_06_metrics.py"
+  },
+  {
+    "id": "TC-096",
+    "name": "second_rank_updates_mrr_and_cutoff_recall",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_06_metrics.py"
+  },
+  {
+    "id": "TC-097",
+    "name": "complete_miss_produces_zero_relevance_metrics",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_06_metrics.py"
+  },
+  {
+    "id": "TC-098",
+    "name": "document_id_can_satisfy_relevance_label",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_06_metrics.py"
+  },
+  {
+    "id": "TC-099",
+    "name": "binary_ndcg_handles_empty_and_ranked_relevance",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_06_metrics.py"
+  },
+  {
+    "id": "TC-100",
+    "name": "percentile_handles_single_and_interpolated_samples",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_06_metrics.py"
+  },
+  {
+    "id": "TC-101",
+    "name": "SearchQuery 序列化保留查询文本",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-102",
+    "name": "SearchQuery 默认返回十项结果",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-103",
+    "name": "SearchQuery 序列化扩展名过滤条件",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-104",
+    "name": "RetrievalHit 正确解析文件扩展名",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-105",
+    "name": "RetrievalHit 对无扩展名文件返回空值",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-106",
+    "name": "RetrievalHit 可以识别图片模态",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-107",
+    "name": "SearchResponse 默认没有警告",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-108",
+    "name": "AccessibilitySettings 默认符合标准显示",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-109",
+    "name": "AccessibilitySettings 可更新高对比度",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-110",
+    "name": "AccessibilitySettings 可更新字体缩放",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-111",
+    "name": "AccessibilitySettings 可更新减少动画",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-112",
+    "name": "本地演示资料库包含五种样例记录",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-113",
+    "name": "本地检索返回向量数据库结果",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-114",
+    "name": "本地检索不区分英文大小写",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-115",
+    "name": "本地检索支持 PDF 扩展名过滤",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-116",
+    "name": "本地检索可以排除图片结果",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-117",
+    "name": "本地检索可以返回跨模态图片",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-118",
+    "name": "本地检索遵守 topK 上限",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-119",
+    "name": "空查询返回可读警告",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-120",
+    "name": "无匹配查询返回空结果",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_07_models_client_test.dart"
+  },
+  {
+    "id": "TC-121",
+    "name": "控制器默认打开资料库页",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-122",
+    "name": "导航索引上界限制为设置页",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-123",
+    "name": "导航索引下界限制为资料库页",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-124",
+    "name": "选择当前导航页不会重复通知",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-125",
+    "name": "控制器可以更新查询文本",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-126",
+    "name": "相同查询文本不会重复通知",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-127",
+    "name": "空扩展名会标准化为空过滤条件",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-128",
+    "name": "控制器可以关闭图片结果",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-129",
+    "name": "控制器搜索后保存响应",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-130",
+    "name": "控制器搜索结束后恢复空闲状态",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-131",
+    "name": "控制器保留空查询警告",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-132",
+    "name": "控制器可以开启高对比度",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-133",
+    "name": "字体缩放上限固定为 200%",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-134",
+    "name": "字体缩放下限固定为 90%",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-135",
+    "name": "控制器可以恢复默认无障碍设置",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_08_controller_test.dart"
+  },
+  {
+    "id": "TC-136",
+    "name": "应用显示离线检索标题",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-137",
+    "name": "资料库页具有明确标题",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-138",
+    "name": "平板端和桌面端使用独立界面骨架",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-139",
+    "name": "移动端使用底部导航和触控筛选面板",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-140",
+    "name": "点击导航可以打开搜索页",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-141",
+    "name": "搜索页包含可聚焦搜索框",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-142",
+    "name": "运行搜索后显示匹配结果",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-143",
+    "name": "清除按钮可以清空查询",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-144",
+    "name": "搜索页提供文件类型过滤器",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-145",
+    "name": "搜索页提供图片结果开关",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-146",
+    "name": "点击导航可以打开无障碍设置",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-147",
+    "name": "高对比度开关立即更新状态",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-148",
+    "name": "减少动画开关立即更新状态",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-149",
+    "name": "200% 字体在 320px 设置页自动重排",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-150",
+    "name": "Ctrl+K 打开搜索页并聚焦输入框",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_09_widgets_accessibility_test.dart"
+  },
+  {
+    "id": "TC-151",
+    "name": "lru_rejects_zero_capacity",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-152",
+    "name": "lru_rejects_negative_capacity",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-153",
+    "name": "new_lru_is_empty",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-154",
+    "name": "missing_lru_key_increments_miss",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-155",
+    "name": "lru_put_then_get_increments_hit",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-156",
+    "name": "lru_overwrite_does_not_grow",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-157",
+    "name": "lru_evicts_oldest_entry",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-158",
+    "name": "lru_get_refreshes_recency",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-159",
+    "name": "lru_clear_removes_entries",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-160",
+    "name": "lru_clear_can_reset_statistics",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-161",
+    "name": "lru_clear_preserves_statistics_by_default",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-162",
+    "name": "lru_contains_reports_existing_key",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-163",
+    "name": "cache_stats_requests_sum_hits_and_misses",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-164",
+    "name": "cache_stats_hit_rate_is_bounded",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-165",
+    "name": "lru_remains_bounded_under_parallel_writes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-166",
+    "name": "cached_engine_uses_requested_capacity",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-167",
+    "name": "first_embed_invokes_backend",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-168",
+    "name": "second_identical_embed_hits_cache",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-169",
+    "name": "same_content_with_new_id_reuses_vector",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-170",
+    "name": "embedding_spaces_have_independent_cache_keys",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-171",
+    "name": "cached_vector_restores_current_metadata",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-172",
+    "name": "batch_misses_use_one_backend_call",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-173",
+    "name": "batch_deduplicates_equal_content",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-174",
+    "name": "batch_preserves_input_order",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-175",
+    "name": "batch_combines_cached_and_new_items",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-176",
+    "name": "batch_records_invalid_text_item",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-177",
+    "name": "batch_strict_mode_raises_invalid_item",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-178",
+    "name": "batch_records_missing_image",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-179",
+    "name": "embedding_cache_evicts_when_full",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-180",
+    "name": "cache_stats_serializes_rate_and_requests",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_10_week6_cache_embedding.py"
+  },
+  {
+    "id": "TC-181",
+    "name": "constructor_rejects_zero_file_batch",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-182",
+    "name": "constructor_keeps_core_reference",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-183",
+    "name": "new_service_metrics_are_zero",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-184",
+    "name": "index_paths_records_operation",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-185",
+    "name": "index_paths_records_parsed_files",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-186",
+    "name": "index_paths_records_persisted_vectors",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-187",
+    "name": "index_paths_invalidates_query_cache",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-188",
+    "name": "first_search_records_operation",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-189",
+    "name": "repeated_search_records_cache_hit",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-190",
+    "name": "query_cache_normalizes_case_and_whitespace",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-191",
+    "name": "query_cache_distinguishes_top_k",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-192",
+    "name": "query_cache_distinguishes_filters",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-193",
+    "name": "invalid_query_is_rejected_without_operation",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-194",
+    "name": "backend_failure_increments_failure_metric",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-195",
+    "name": "search_latency_is_nonnegative",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-196",
+    "name": "empty_directory_returns_empty_summary",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-197",
+    "name": "nonrecursive_directory_ignores_nested_file",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-198",
+    "name": "recursive_directory_finds_nested_file",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-199",
+    "name": "directory_uses_bounded_file_batches",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-200",
+    "name": "directory_ignores_unsupported_extensions",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-201",
+    "name": "merge_summaries_combines_failures",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-202",
+    "name": "library_items_deduplicate_document_chunks",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-203",
+    "name": "library_items_are_sorted_by_file_name",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-204",
+    "name": "library_item_preserves_source_path",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-205",
+    "name": "library_item_invalid_chunk_index_becomes_none",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-206",
+    "name": "health_is_ready_without_issues",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-207",
+    "name": "health_is_degraded_with_issue",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-208",
+    "name": "health_confirms_offline_only",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-209",
+    "name": "health_exposes_vector_store_type",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-210",
+    "name": "health_metrics_reflect_completed_search",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_11_week6_integrated_service.py"
+  },
+  {
+    "id": "TC-211",
+    "name": "policy_requires_allowed_root",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-212",
+    "name": "policy_accepts_configured_root",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-213",
+    "name": "policy_accepts_child_file",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-214",
+    "name": "policy_rejects_path_outside_root",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-215",
+    "name": "policy_rejects_missing_child_by_default",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-216",
+    "name": "policy_can_validate_future_child_path",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-217",
+    "name": "policy_accepts_localhost_endpoint",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-218",
+    "name": "policy_accepts_ipv4_loopback_endpoint",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-219",
+    "name": "policy_accepts_ipv6_loopback_endpoint",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-220",
+    "name": "policy_rejects_external_endpoint",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-221",
+    "name": "policy_rejects_non_http_endpoint",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-222",
+    "name": "chroma_factory_disables_anonymized_telemetry",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-223",
+    "name": "scan_clean_source_passes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-224",
+    "name": "scan_detects_aws_access_key",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-225",
+    "name": "scan_detects_private_key_marker",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-226",
+    "name": "scan_detects_external_http_endpoint",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-227",
+    "name": "scan_ignores_localhost_endpoint",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-228",
+    "name": "scan_ignores_numeric_loopback_endpoint",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-229",
+    "name": "scan_excludes_build_directory",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-230",
+    "name": "scan_ignores_binary_suffix",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-231",
+    "name": "review_counts_critical_findings",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-232",
+    "name": "review_with_high_finding_does_not_pass",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-233",
+    "name": "bridge_ping_echoes_request_id",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-234",
+    "name": "bridge_health_serializes_backend",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-235",
+    "name": "bridge_library_returns_items",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-236",
+    "name": "bridge_maps_search_query_fields",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-237",
+    "name": "bridge_rejects_missing_command",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-238",
+    "name": "bridge_rejects_unknown_command",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-239",
+    "name": "bridge_indexes_valid_local_path",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-240",
+    "name": "stdio_reports_invalid_json_then_shutdown",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_12_week6_security_bridge.py"
+  },
+  {
+    "id": "TC-241",
+    "name": "percentile_rejects_empty_values",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-242",
+    "name": "percentile_rejects_negative_percent",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-243",
+    "name": "percentile_rejects_percent_over_hundred",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-244",
+    "name": "percentile_single_value_is_stable",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-245",
+    "name": "percentile_zero_returns_minimum",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-246",
+    "name": "percentile_hundred_returns_maximum",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-247",
+    "name": "percentile_fifty_returns_median",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-248",
+    "name": "percentile_linearly_interpolates",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-249",
+    "name": "measure_rejects_zero_iterations",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-250",
+    "name": "measure_rejects_negative_warmups",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-251",
+    "name": "measure_runs_warmups_and_iterations",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-252",
+    "name": "measure_minimum_does_not_exceed_maximum",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-253",
+    "name": "measure_reports_positive_throughput",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-254",
+    "name": "measure_serializes_latency_fields",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-255",
+    "name": "improvement_rejects_zero_baseline",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-256",
+    "name": "improvement_reports_fifty_percent",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-257",
+    "name": "improvement_can_report_regression",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-258",
+    "name": "memory_profile_returns_operation_value",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-259",
+    "name": "memory_peak_is_not_below_current",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-260",
+    "name": "stress_rejects_negative_operations",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-261",
+    "name": "stress_rejects_zero_concurrency",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-262",
+    "name": "zero_operation_stress_is_successful",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-263",
+    "name": "parallel_stress_completes_two_hundred_operations",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-264",
+    "name": "stress_counts_operation_failures",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-265",
+    "name": "stress_success_rate_reflects_failures",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-266",
+    "name": "stress_preserves_requested_concurrency",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-267",
+    "name": "stress_serialization_includes_success_rate",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-268",
+    "name": "runtime_metrics_average_is_zero_without_search",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-269",
+    "name": "runtime_metrics_average_uses_operation_count",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-270",
+    "name": "security_review_serializes_findings",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_13_week6_performance_stress.py"
+  },
+  {
+    "id": "TC-271",
+    "name": "RetrievalHit 可以解析 Python JSON 字段",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-272",
+    "name": "RetrievalHit 缺失数值字段使用安全默认值",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-273",
+    "name": "SearchResponse 可以解析结果列表",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-274",
+    "name": "BackendHealth 可以解析缓存命中率",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-275",
+    "name": "BackendHealth ready 仅对应就绪状态",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-276",
+    "name": "IndexingResult 可以解析写入统计",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-277",
+    "name": "IndexingResult 汇总解析与嵌入失败",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-278",
+    "name": "演示客户端明确返回降级健康状态",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-279",
+    "name": "演示客户端可以加载只读资料库",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-280",
+    "name": "演示客户端拒绝执行真实索引",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-281",
+    "name": "控制器从客户端建立初始资料列表",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-282",
+    "name": "控制器初始化后保存健康状态",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-283",
+    "name": "控制器初始化会刷新持久化资料库",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-284",
+    "name": "控制器可以主动刷新后端健康状态",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-285",
+    "name": "索引完成后保存结果并刷新状态",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_10_week6_models_controller_test.dart"
+  },
+  {
+    "id": "TC-286",
+    "name": "资料库提供本地路径索引入口",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-287",
+    "name": "点击索引入口打开本地路径对话框",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-288",
+    "name": "空索引路径显示就地校验信息",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-289",
+    "name": "有效路径触发索引并显示成功结果",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-290",
+    "name": "设置页展示系统与本地隐私状态",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-291",
+    "name": "后端状态刷新按钮调用健康接口",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-292",
+    "name": "降级原因在设置页明确显示",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-293",
+    "name": "桌面端集成改动保持独立桌面骨架",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-294",
+    "name": "平板端系统状态采用重排布局",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-295",
+    "name": "移动端保留底部导航和索引入口",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-296",
+    "name": "320px 与 200% 字体下索引对话框无溢出",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-297",
+    "name": "检索异常转换为可读界面警告",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-298",
+    "name": "控制器初始化具有幂等性",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-299",
+    "name": "控制器释放时关闭本地客户端",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-300",
+    "name": "平台工厂返回稳定 RetrievalClient 接口",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_11_week6_widgets_resilience_test.dart"
+  },
+  {
+    "id": "TC-301",
+    "name": "license_record_rejects_empty_name",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-302",
+    "name": "license_record_rejects_empty_license",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-303",
+    "name": "license_record_rejects_unknown_component_type",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-304",
+    "name": "license_record_rejects_unknown_distribution",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-305",
+    "name": "license_record_key_is_stable_and_lowercase",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-306",
+    "name": "license_record_serializes_all_policy_fields",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-307",
+    "name": "finding_rejects_unsupported_severity",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-308",
+    "name": "high_finding_is_blocking",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-309",
+    "name": "medium_finding_is_not_blocking",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-310",
+    "name": "report_counts_blocking_findings",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-311",
+    "name": "report_counts_low_and_medium_warnings",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-312",
+    "name": "report_without_blockers_passes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-313",
+    "name": "report_serialization_includes_policy_version",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-314",
+    "name": "normalize_apache_alias",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-315",
+    "name": "normalize_bsd_alias",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-316",
+    "name": "normalize_mit_alias",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-317",
+    "name": "normalize_unknown_preserves_cleaned_value",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-318",
+    "name": "default_inventory_has_nineteen_direct_records",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-319",
+    "name": "default_inventory_separates_software_models_and_data",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-320",
+    "name": "mobileclip_weights_are_excluded",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-321",
+    "name": "default_inventory_has_no_included_nonredistributable_component",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-322",
+    "name": "default_inventory_passes_blocking_policy",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-323",
+    "name": "duplicate_record_creates_medium_finding",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-324",
+    "name": "non_https_source_creates_finding",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-325",
+    "name": "included_nonredistributable_component_blocks",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-326",
+    "name": "included_review_required_license_blocks",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-327",
+    "name": "unknown_software_license_requires_manual_review",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-328",
+    "name": "model_without_usage_note_creates_low_finding",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-329",
+    "name": "missing_notice_files_create_four_blockers",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-330",
+    "name": "empty_notice_file_is_rejected",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-331",
+    "name": "populated_notice_files_pass",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-332",
+    "name": "sbom_is_sorted_by_component_key",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-333",
+    "name": "sbom_normalizes_license_identifiers",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-334",
+    "name": "write_artifacts_creates_machine_readable_files",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-335",
+    "name": "written_summary_component_count_matches_inventory",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_14_week7_compliance.py"
+  },
+  {
+    "id": "TC-336",
+    "name": "python_312_passes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-337",
+    "name": "python_311_fails",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-338",
+    "name": "future_python_version_passes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-339",
+    "name": "preflight_check_rejects_unknown_status",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-340",
+    "name": "pass_check_is_not_blocking",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-341",
+    "name": "required_fail_is_blocking",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-342",
+    "name": "optional_fail_is_not_blocking",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-343",
+    "name": "check_serialization_includes_blocking",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-344",
+    "name": "empty_preflight_is_not_release_ready",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-345",
+    "name": "all_passing_checks_are_release_ready",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-346",
+    "name": "report_counts_blocking_failures",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-347",
+    "name": "report_counts_warnings",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-348",
+    "name": "report_serializes_product_version",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-349",
+    "name": "existing_required_path_passes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-350",
+    "name": "missing_required_path_fails",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-351",
+    "name": "missing_optional_path_warns",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-352",
+    "name": "writable_directory_probe_cleans_temporary_file",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-353",
+    "name": "offline_check_passes_without_source_directory",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-354",
+    "name": "offline_check_accepts_https_client_text",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-355",
+    "name": "offline_check_rejects_http_server_import",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-356",
+    "name": "offline_check_rejects_listener_call",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-357",
+    "name": "offline_check_rejects_wildcard_bind_address",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-358",
+    "name": "model_boundary_passes_without_weights",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-359",
+    "name": "model_boundary_rejects_pt",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-360",
+    "name": "model_boundary_rejects_pth",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-361",
+    "name": "model_boundary_rejects_ckpt",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-362",
+    "name": "model_boundary_rejects_onnx",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-363",
+    "name": "model_boundary_rejects_tflite",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-364",
+    "name": "model_boundary_rejects_safetensors",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-365",
+    "name": "clean_source_has_passing_artifact_check",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-366",
+    "name": "generated_cache_creates_nonblocking_warning",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-367",
+    "name": "required_project_contract_has_eight_paths",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-368",
+    "name": "preflight_on_empty_root_reports_missing_paths",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-369",
+    "name": "preflight_reports_requested_product_version",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-370",
+    "name": "preflight_current_release_root_has_no_blocking_failure",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_15_week7_preflight.py"
+  },
+  {
+    "id": "TC-371",
+    "name": "entry_requires_markdown_extension",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-372",
+    "name": "entry_requires_title",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-373",
+    "name": "entry_requires_audience",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-374",
+    "name": "entry_serializes_headings_as_list",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-375",
+    "name": "extracts_level_one_heading",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-376",
+    "name": "extracts_multiple_heading_levels",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-377",
+    "name": "strips_optional_closing_hashes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-378",
+    "name": "ignores_hash_without_space",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-379",
+    "name": "ignores_fenced_code_headings",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-380",
+    "name": "extracts_relative_markdown_link",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-381",
+    "name": "excludes_https_link",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-382",
+    "name": "excludes_anchor_only_link",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-383",
+    "name": "excludes_mailto_link",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-384",
+    "name": "decodes_percent_encoded_space",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-385",
+    "name": "strips_fragment_from_file_link",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-386",
+    "name": "ignores_markdown_image_link",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-387",
+    "name": "empty_audit_has_zero_completeness",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-388",
+    "name": "complete_audit_passes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-389",
+    "name": "missing_file_fails_audit",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-390",
+    "name": "missing_heading_fails_audit",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-391",
+    "name": "broken_link_fails_audit",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-392",
+    "name": "completeness_rounds_to_two_decimals",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-393",
+    "name": "audit_reports_missing_file_path",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-394",
+    "name": "audit_reports_required_heading",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-395",
+    "name": "heading_match_is_case_insensitive",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-396",
+    "name": "audit_reports_broken_relative_link",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-397",
+    "name": "audit_accepts_existing_sibling_link",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-398",
+    "name": "audit_accepts_parent_directory_link",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-399",
+    "name": "audit_counts_only_present_expected_documents",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-400",
+    "name": "audit_serialization_uses_lists",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-401",
+    "name": "default_manifest_has_eight_documents",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-402",
+    "name": "default_manifest_paths_are_unique",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-403",
+    "name": "default_manifest_covers_end_users_and_maintainers",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-404",
+    "name": "default_manifest_every_document_has_required_headings",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-405",
+    "name": "current_release_documentation_contract_passes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_16_week7_documentation.py"
+  },
+  {
+    "id": "TC-406",
+    "name": "required_failed_gate_is_blocking",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-407",
+    "name": "optional_failed_gate_is_not_blocking",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-408",
+    "name": "gate_serialization_includes_evidence",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-409",
+    "name": "release_with_all_gates_passes_go",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-410",
+    "name": "release_with_no_gates_is_no_go",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-411",
+    "name": "release_with_blocker_is_no_go",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-412",
+    "name": "release_counts_passed_gates",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-413",
+    "name": "release_score_is_percentage",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-414",
+    "name": "release_serialization_includes_candidate",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-415",
+    "name": "test_gate_accepts_exactly_five_hundred_passes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-416",
+    "name": "test_gate_rejects_wrong_count",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-417",
+    "name": "test_gate_rejects_failed_suite",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-418",
+    "name": "test_gate_supports_custom_expected_count",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-419",
+    "name": "core_coverage_accepts_ninety_percent",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-420",
+    "name": "core_coverage_rejects_below_threshold",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-421",
+    "name": "core_coverage_missing_value_defaults_to_zero",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-422",
+    "name": "flutter_coverage_accepts_eighty_percent",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-423",
+    "name": "flutter_coverage_supports_custom_threshold",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-424",
+    "name": "compliance_gate_accepts_report_without_blocker",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-425",
+    "name": "documentation_gate_accepts_complete_audit",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-426",
+    "name": "documentation_gate_rejects_broken_link",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-427",
+    "name": "preflight_gate_accepts_ready_report",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-428",
+    "name": "preflight_gate_rejects_empty_report",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-429",
+    "name": "artifact_gate_accepts_empty_requirement",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-430",
+    "name": "artifact_gate_accepts_present_files",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-431",
+    "name": "artifact_gate_lists_missing_files",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-432",
+    "name": "full_readiness_builds_seven_gates",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-433",
+    "name": "full_passing_readiness_is_go",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-434",
+    "name": "failed_test_gate_makes_full_readiness_no_go",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-435",
+    "name": "full_readiness_preserves_requested_version",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-436",
+    "name": "load_json_reads_object",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-437",
+    "name": "load_json_rejects_array",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-438",
+    "name": "load_json_propagates_invalid_json",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-439",
+    "name": "write_readiness_creates_parent_and_json",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-440",
+    "name": "written_readiness_has_blocking_gate_count",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_17_week7_release_readiness.py"
+  },
+  {
+    "id": "TC-441",
+    "name": "产品名称延续 Week6 界面命名",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-442",
+    "name": "平台显示名延续 Week6 工程命名",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-443",
+    "name": "正式发布版本为一点零",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-444",
+    "name": "发布日期对应 Week8 收尾日",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-445",
+    "name": "自动化测试目标为六百项",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-446",
+    "name": "项目许可证为 Apache 二点零",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-447",
+    "name": "隐私模式声明不开放网络端口",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-448",
+    "name": "进程协议明确使用本地标准流",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-449",
+    "name": "无障碍主张明确不是独立认证",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-450",
+    "name": "发布版定义四项能力边界",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-451",
+    "name": "能力边界编号唯一",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-452",
+    "name": "检索能力边界排除生成式回答",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-453",
+    "name": "OCR 能力边界明确未完成",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-454",
+    "name": "模型能力边界明确不随源码分发",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-455",
+    "name": "未知能力边界编号返回空",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-456",
+    "name": "发布版提供四个离线帮助主题",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-457",
+    "name": "安装帮助指向随包文档",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-458",
+    "name": "未知帮助主题编号返回空",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-459",
+    "name": "许可摘要覆盖源码模型和数据",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-460",
+    "name": "模型权重许可摘要明确不打包",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_12_week7_release_info_test.dart"
+  },
+  {
+    "id": "TC-461",
+    "name": "设置页升级为无障碍与支持中心",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-462",
+    "name": "设置页标明正式发布版",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-463",
+    "name": "设置页包含版本与开源声明卡片",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-464",
+    "name": "版本横幅显示正式版本",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-465",
+    "name": "版本横幅显示正式发布日期",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-466",
+    "name": "隐私事实显示仅本地处理",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-467",
+    "name": "协议事实显示标准流桥接",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-468",
+    "name": "发布门禁事实显示六百项测试",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-469",
+    "name": "四项能力边界均具有稳定组件键",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-470",
+    "name": "应用内明确不是生成式 AI",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-471",
+    "name": "应用内明确 OCR 限制",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-472",
+    "name": "应用内明确模型权重不随源码分发",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-473",
+    "name": "应用内明确桌面端生产验证范围",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-474",
+    "name": "开源摘要可通过稳定组件键定位",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-475",
+    "name": "无障碍主张避免错误认证表述",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-476",
+    "name": "设置页包含离线快速帮助区域",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-477",
+    "name": "四个帮助主题均具有稳定组件键",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-478",
+    "name": "快速帮助声明无需外部网站",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-479",
+    "name": "桌面端帮助主题采用两列信息层级",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-480",
+    "name": "帮助卡为读屏器合并标题和文档动作",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_13_week7_help_about_test.dart"
+  },
+  {
+    "id": "TC-481",
+    "name": "三百二十像素设置中心无渲染异常",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-482",
+    "name": "三百二十像素二倍字体发布卡无溢出",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-483",
+    "name": "移动端帮助主题保持单列完整卡片",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-484",
+    "name": "桌面端帮助主题使用两列布局",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-485",
+    "name": "平板端发布事实按单列重排",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-486",
+    "name": "桌面端发布事实形成三列概览",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-487",
+    "name": "高对比度下发布声明仍可布局",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-488",
+    "name": "减少动画下帮助区仍完整",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-489",
+    "name": "MaterialApp 标题与产品名称一致",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-490",
+    "name": "生产 Dart 源码不调用 Material Icons",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-491",
+    "name": "生产 Dart 源码不直接实例化默认 Icon",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-492",
+    "name": "发布配置保留框架资源并注册本地 CJK 字体",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-493",
+    "name": "发布配置保留框架图标和本地字体许可",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-494",
+    "name": "Web manifest 使用正式产品名称",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-495",
+    "name": "Web manifest 允许独立响应式方向",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-496",
+    "name": "Web 页面标题使用正式产品名称",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-497",
+    "name": "Windows 窗口标题使用正式产品名称",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-498",
+    "name": "Android 应用标签使用正式产品名称",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-499",
+    "name": "Flutter 包版本与 Week8 正式版本一致",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-500",
+    "name": "四个平台入口延续 Week6 工程命名",
+    "layer": "Flutter UI and accessibility",
+    "source": "app\\offline_retrieval_ui\\test\\test_14_week7_responsive_polish_test.dart"
+  },
+  {
+    "id": "TC-501",
+    "name": "lineage_contains_eight_weeks",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-502",
+    "name": "lineage_starts_at_week_one",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-503",
+    "name": "lineage_ends_at_week_eight",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-504",
+    "name": "lineage_week_numbers_are_continuous",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-505",
+    "name": "each_week_has_focus",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-506",
+    "name": "each_week_has_product_value",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-507",
+    "name": "each_week_has_source_path",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-508",
+    "name": "each_week_has_evidence_path",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-509",
+    "name": "week_one_feeds_week_two",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-510",
+    "name": "week_seven_feeds_week_eight",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-511",
+    "name": "week_eight_is_terminal",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-512",
+    "name": "week_one_mentions_required_datasets",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-513",
+    "name": "week_two_uses_parser_package",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-514",
+    "name": "week_three_uses_embedding_package",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-515",
+    "name": "week_four_uses_retrieval_package",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-516",
+    "name": "week_five_uses_flutter_application",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-517",
+    "name": "week_six_uses_integration_package",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-518",
+    "name": "week_seven_uses_release_package",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-519",
+    "name": "week_eight_uses_delivery_package",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-520",
+    "name": "contribution_serializes_to_dictionary",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-521",
+    "name": "contribution_is_immutable",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-522",
+    "name": "validation_passes_materialized_chain",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-523",
+    "name": "validation_detects_missing_source",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-524",
+    "name": "validation_detects_missing_evidence",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-525",
+    "name": "week_contribution_type_is_explicit",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_18_week8_lineage.py"
+  },
+  {
+    "id": "TC-526",
+    "name": "four_week_one_datasets_are_configured",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-527",
+    "name": "squad_records_manager_approved_substitution",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-528",
+    "name": "coco_role_is_multimodal",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-529",
+    "name": "rvl_role_is_scanned_document",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-530",
+    "name": "wikipedia_role_is_long_document",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-531",
+    "name": "demo_selection_uses_all_four_datasets",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-532",
+    "name": "demo_selection_has_twenty_two_files",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-533",
+    "name": "demo_contains_six_squad_files",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-534",
+    "name": "demo_contains_four_wikipedia_files",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-535",
+    "name": "demo_contains_six_coco_files",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-536",
+    "name": "demo_contains_six_rvl_files",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-537",
+    "name": "demo_queries_include_text",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-538",
+    "name": "demo_queries_include_image",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-539",
+    "name": "demo_queries_have_narration",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-540",
+    "name": "default_selection_returns_absolute_paths",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-541",
+    "name": "inventory_returns_dataset_summary_objects",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-542",
+    "name": "inventory_reports_expected_counts",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-543",
+    "name": "inventory_reports_all_available",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-544",
+    "name": "inventory_detects_missing_manifest",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-545",
+    "name": "dataset_summary_serializes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-546",
+    "name": "prepare_demo_copies_exact_selection",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-547",
+    "name": "prepare_demo_writes_manifest",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-548",
+    "name": "demo_manifest_is_valid_json",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-549",
+    "name": "prepare_demo_fails_on_missing_source",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-550",
+    "name": "demo_provenance_names_week_one",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_19_week8_datasets.py"
+  },
+  {
+    "id": "TC-551",
+    "name": "platform_check_pass_property",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-552",
+    "name": "platform_check_fail_property",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-553",
+    "name": "platform_check_serializes_passed",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-554",
+    "name": "platform_assessment_detects_blocking_failure",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-555",
+    "name": "nonblocking_failure_is_not_blocker",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-556",
+    "name": "evaluate_returns_three_platforms",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-557",
+    "name": "platform_order_is_windows_macos_linux",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-558",
+    "name": "windows_uses_real_evidence_class",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-559",
+    "name": "windows_go_with_complete_release",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-560",
+    "name": "windows_no_go_without_executable",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-561",
+    "name": "windows_no_go_on_non_windows_host",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-562",
+    "name": "windows_checks_executable",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-563",
+    "name": "windows_checks_runtime_dll",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-564",
+    "name": "windows_checks_data_directory",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-565",
+    "name": "windows_checks_launcher",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-566",
+    "name": "macos_is_simulation",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-567",
+    "name": "linux_is_simulation",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-568",
+    "name": "macos_decision_requires_real_execution",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-569",
+    "name": "linux_decision_requires_real_execution",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-570",
+    "name": "macos_limitations_name_xcode",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-571",
+    "name": "macos_limitations_name_voiceover",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-572",
+    "name": "missing_workflow_blocks_simulations",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-573",
+    "name": "missing_source_package_blocks_macos",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-574",
+    "name": "assessment_serializes_limitations",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-575",
+    "name": "assessment_serializes_blocking_count",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_20_week8_platforms.py"
+  },
+  {
+    "id": "TC-576",
+    "name": "delivery_gate_serializes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-577",
+    "name": "final_readiness_go_with_passing_gate",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-578",
+    "name": "final_readiness_no_go_without_gates",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-579",
+    "name": "final_readiness_no_go_on_blocker",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-580",
+    "name": "nonblocking_failure_preserves_go",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-581",
+    "name": "blocking_failures_are_counted",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-582",
+    "name": "readiness_version_is_one_zero",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-583",
+    "name": "readiness_has_ten_gates",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-584",
+    "name": "complete_internal_delivery_is_go",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-585",
+    "name": "lineage_failure_blocks_release",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-586",
+    "name": "dataset_failure_blocks_release",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-587",
+    "name": "test_count_must_equal_six_hundred",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-588",
+    "name": "failed_suite_blocks_release",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-589",
+    "name": "core_coverage_below_ninety_blocks",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-590",
+    "name": "core_coverage_at_ninety_passes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-591",
+    "name": "flutter_coverage_below_eighty_blocks",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-592",
+    "name": "flutter_coverage_at_eighty_passes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-593",
+    "name": "windows_no_go_blocks_release",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-594",
+    "name": "simulation_contract_failure_blocks_release",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-595",
+    "name": "missing_required_document_blocks_release",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-596",
+    "name": "present_required_document_passes",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-597",
+    "name": "github_gate_is_nonblocking",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-598",
+    "name": "video_gate_is_nonblocking_during_owner_handoff",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-599",
+    "name": "external_actions_include_video",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  },
+  {
+    "id": "TC-600",
+    "name": "final_readiness_serializes_decision",
+    "layer": "Python retrieval and delivery core",
+    "source": "tests\\test_21_week8_readiness.py"
+  }
+]

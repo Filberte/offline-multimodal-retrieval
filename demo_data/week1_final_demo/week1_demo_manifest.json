@@ -1,0 +1,175 @@
+{
+  "generated_at": "2026-08-08",
+  "provenance": "Exact copies selected from the Week 1 curated local datasets",
+  "project_root": "C:\\Amazon Internship",
+  "demo_root": "C:\\Amazon Internship\\Week8_Deliverables\\demo_data\\week1_final_demo",
+  "total_files": 22,
+  "by_dataset": {
+    "squad": 6,
+    "wikipedia": 4,
+    "coco": 6,
+    "rvl_cdip": 6
+  },
+  "entries": [
+    {
+      "dataset": "squad",
+      "source": "datasets\\required_datasets\\squad\\processed\\contexts\\0000_Normans.txt",
+      "demo_path": "squad\\0000_Normans.txt",
+      "bytes": 742
+    },
+    {
+      "dataset": "squad",
+      "source": "datasets\\required_datasets\\squad\\processed\\contexts\\0001_Normans.txt",
+      "demo_path": "squad\\0001_Normans.txt",
+      "bytes": 1427
+    },
+    {
+      "dataset": "squad",
+      "source": "datasets\\required_datasets\\squad\\processed\\contexts\\0004_Normans.txt",
+      "demo_path": "squad\\0004_Normans.txt",
+      "bytes": 676
+    },
+    {
+      "dataset": "squad",
+      "source": "datasets\\required_datasets\\squad\\processed\\contexts\\0007_Normans.txt",
+      "demo_path": "squad\\0007_Normans.txt",
+      "bytes": 710
+    },
+    {
+      "dataset": "squad",
+      "source": "datasets\\required_datasets\\squad\\processed\\contexts\\0011_Normans.txt",
+      "demo_path": "squad\\0011_Normans.txt",
+      "bytes": 1765
+    },
+    {
+      "dataset": "squad",
+      "source": "datasets\\required_datasets\\squad\\processed\\contexts\\0018_Normans.txt",
+      "demo_path": "squad\\0018_Normans.txt",
+      "bytes": 1290
+    },
+    {
+      "dataset": "wikipedia",
+      "source": "datasets\\required_datasets\\wikipedia\\processed\\articles\\000_Anarchism.txt",
+      "demo_path": "wikipedia\\000_Anarchism.txt",
+      "bytes": 46212
+    },
+    {
+      "dataset": "wikipedia",
+      "source": "datasets\\required_datasets\\wikipedia\\processed\\articles\\003_Alabama.txt",
+      "demo_path": "wikipedia\\003_Alabama.txt",
+      "bytes": 82397
+    },
+    {
+      "dataset": "wikipedia",
+      "source": "datasets\\required_datasets\\wikipedia\\processed\\articles\\005_Abraham_Lincoln.txt",
+      "demo_path": "wikipedia\\005_Abraham_Lincoln.txt",
+      "bytes": 76920
+    },
+    {
+      "dataset": "wikipedia",
+      "source": "datasets\\required_datasets\\wikipedia\\processed\\articles\\006_Aristotle.txt",
+      "demo_path": "wikipedia\\006_Aristotle.txt",
+      "bytes": 65148
+    },
+    {
+      "dataset": "coco",
+      "source": "datasets\\required_datasets\\coco\\raw\\images\\val2017\\000000397133.jpg",
+      "demo_path": "coco\\000000397133.jpg",
+      "bytes": 200576
+    },
+    {
+      "dataset": "coco",
+      "source": "datasets\\required_datasets\\coco\\raw\\images\\val2017\\000000087038.jpg",
+      "demo_path": "coco\\000000087038.jpg",
+      "bytes": 183303
+    },
+    {
+      "dataset": "coco",
+      "source": "datasets\\required_datasets\\coco\\raw\\images\\val2017\\000000386912.jpg",
+      "demo_path": "coco\\000000386912.jpg",
+      "bytes": 230157
+    },
+    {
+      "dataset": "coco",
+      "source": "datasets\\required_datasets\\coco\\raw\\images\\val2017\\000000348881.jpg",
+      "demo_path": "coco\\000000348881.jpg",
+      "bytes": 162982
+    },
+    {
+      "dataset": "coco",
+      "source": "datasets\\required_datasets\\coco\\raw\\images\\val2017\\000000522713.jpg",
+      "demo_path": "coco\\000000522713.jpg",
+      "bytes": 120822
+    },
+    {
+      "dataset": "coco",
+      "source": "datasets\\required_datasets\\coco\\raw\\images\\val2017\\000000480985.jpg",
+      "demo_path": "coco\\000000480985.jpg",
+      "bytes": 141359
+    },
+    {
+      "dataset": "rvl_cdip",
+      "source": "datasets\\required_datasets\\rvl_cdip\\raw\\images\\test\\rvl_cdip_n_test_00000_budget.png",
+      "demo_path": "rvl_cdip\\rvl_cdip_n_test_00000_budget.png",
+      "bytes": 303213
+    },
+    {
+      "dataset": "rvl_cdip",
+      "source": "datasets\\required_datasets\\rvl_cdip\\raw\\images\\test\\rvl_cdip_n_test_00001_budget.png",
+      "demo_path": "rvl_cdip\\rvl_cdip_n_test_00001_budget.png",
+      "bytes": 43887
+    },
+    {
+      "dataset": "rvl_cdip",
+      "source": "datasets\\required_datasets\\rvl_cdip\\raw\\images\\test\\rvl_cdip_n_test_00002_budget.png",
+      "demo_path": "rvl_cdip\\rvl_cdip_n_test_00002_budget.png",
+      "bytes": 271323
+    },
+    {
+      "dataset": "rvl_cdip",
+      "source": "datasets\\required_datasets\\rvl_cdip\\raw\\images\\test\\rvl_cdip_n_test_00003_budget.png",
+      "demo_path": "rvl_cdip\\rvl_cdip_n_test_00003_budget.png",
+      "bytes": 390171
+    },
+    {
+      "dataset": "rvl_cdip",
+      "source": "datasets\\required_datasets\\rvl_cdip\\raw\\images\\test\\rvl_cdip_n_test_00004_budget.png",
+      "demo_path": "rvl_cdip\\rvl_cdip_n_test_00004_budget.png",
+      "bytes": 362731
+    },
+    {
+      "dataset": "rvl_cdip",
+      "source": "datasets\\required_datasets\\rvl_cdip\\raw\\images\\test\\rvl_cdip_n_test_00005_budget.png",
+      "demo_path": "rvl_cdip\\rvl_cdip_n_test_00005_budget.png",
+      "bytes": 293565
+    }
+  ],
+  "queries": [
+    {
+      "query": "Norman conquest of England",
+      "mode": "text",
+      "expected_group": "squad",
+      "narration": "验证 Week 2 文本解析、Week 3 文本嵌入和 Week 4 混合排序。"
+    },
+    {
+      "query": "Abraham Lincoln president",
+      "mode": "text",
+      "expected_group": "wikipedia",
+      "narration": "验证长文分块、持久化和可解释来源。"
+    },
+    {
+      "query": "an airplane parked at an airport gate",
+      "mode": "image",
+      "expected_group": "coco",
+      "expected_file": "000000348881.jpg",
+      "narration": "验证 COCO 自然图像的文本到图像跨模态搜索。"
+    },
+    {
+      "query": "budget document",
+      "mode": "image",
+      "expected_group": "rvl_cdip",
+      "expected_file": "rvl_cdip_n_test_00004_budget.png",
+      "narration": "验证 RVL-CDIP 相关扫描文档图像检索，并明确 OCR 尚未生产化。"
+    }
+  ]
+}

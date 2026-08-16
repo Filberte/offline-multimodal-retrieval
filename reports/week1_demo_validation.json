@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-08-08",
+  "method": "deterministic_pipeline_validation_not_model_accuracy_claim",
+  "lineage": "Week 1 data -> Week 2 parser -> Week 3 embedding interface -> Chroma -> Week 4 hybrid retrieval -> Week 6 integration",
+  "files": 22,
+  "indexing": {
+    "discovered": 22,
+    "parsed": 22,
+    "vectors": 371,
+    "parse_failures": [],
+    "embedding_failures": []
+  },
+  "queries": [
+    {
+      "query": "Norman conquest of England",
+      "mode": "text",
+      "hits": 5,
+      "group_present": true,
+      "top_files": [
+        "0018_Normans.txt",
+        "0001_Normans.txt",
+        "000_Anarchism.txt"
+      ]
+    },
+    {
+      "query": "Abraham Lincoln president",
+      "mode": "text",
+      "hits": 5,
+      "group_present": true,
+      "top_files": [
+        "005_Abraham_Lincoln.txt",
+        "005_Abraham_Lincoln.txt",
+        "005_Abraham_Lincoln.txt"
+      ]
+    },
+    {
+      "query": "an airplane parked at an airport gate",
+      "mode": "image",
+      "hits": 5,
+      "group_present": true,
+      "top_files": [
+        "rvl_cdip_n_test_00003_budget.png",
+        "rvl_cdip_n_test_00000_budget.png",
+        "rvl_cdip_n_test_00004_budget.png"
+      ]
+    },
+    {
+      "query": "budget document",
+      "mode": "image",
+      "hits": 5,
+      "group_present": true,
+      "top_files": [
+        "rvl_cdip_n_test_00003_budget.png",
+        "000000348881.jpg",
+        "000000522713.jpg"
+      ]
+    }
+  ],
+  "elapsed_seconds": 2.791,
+  "passed": true
+}

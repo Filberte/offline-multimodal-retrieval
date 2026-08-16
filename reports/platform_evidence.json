@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-08-08",
+  "host": "Windows",
+  "assessments": [
+    {
+      "platform": "Windows",
+      "evidence_class": "real_host_build_and_execution",
+      "checks": [
+        {
+          "code": "WIN-001",
+          "platform": "Windows",
+          "label": "Host operating system",
+          "status": "pass",
+          "evidence": "Windows-11-10.0.26200-SP0",
+          "blocking": true,
+          "passed": true
+        },
+        {
+          "code": "WIN-002",
+          "platform": "Windows",
+          "label": "Flutter release executable",
+          "status": "pass",
+          "evidence": "C:\\Amazon Internship\\Week8_Deliverables\\release\\windows\\offline_retrieval_ui\\offline_retrieval_ui.exe",
+          "blocking": true,
+          "passed": true
+        },
+        {
+          "code": "WIN-003",
+          "platform": "Windows",
+          "label": "Flutter runtime DLL",
+          "status": "pass",
+          "evidence": "C:\\Amazon Internship\\Week8_Deliverables\\release\\windows\\offline_retrieval_ui\\flutter_windows.dll",
+          "blocking": true,
+          "passed": true
+        },
+        {
+          "code": "WIN-004",
+          "platform": "Windows",
+          "label": "Release asset directory",
+          "status": "pass",
+          "evidence": "C:\\Amazon Internship\\Week8_Deliverables\\release\\windows\\offline_retrieval_ui\\data",
+          "blocking": true,
+          "passed": true
+        },
+        {
+          "code": "WIN-005",
+          "platform": "Windows",
+          "label": "One-click launcher",
+          "status": "pass",
+          "evidence": "Windows launcher present",
+          "blocking": true,
+          "passed": true
+        }
+      ],
+      "decision": "GO",
+      "limitations": [],
+      "blocking_failures": 0
+    },
+    {
+      "platform": "macOS",
+      "evidence_class": "windows_hosted_source_and_contract_simulation",
+      "checks": [
+        {
+          "code": "MAC-SIM-001",
+          "platform": "macOS",
+          "label": "Flutter target directory",
+          "status": "pass",
+          "evidence": "C:\\Amazon Internship\\Week8_Deliverables\\app\\offline_retrieval_ui\\macos",
+          "blocking": true,
+          "passed": true
+        },
+        {
+          "code": "MAC-SIM-002",
+          "platform": "macOS",
+          "label": "Flutter project metadata",
+          "status": "pass",
+          "evidence": "pubspec.yaml present",
+          "blocking": true,
+          "passed": true
+        },
+        {
+          "code": "MAC-SIM-003",
+          "platform": "macOS",
+          "label": "Shared Dart application",
+          "status": "pass",
+          "evidence": "lib/main.dart present",
+          "blocking": true,
+          "passed": true
+        },
+        {
+          "code": "MAC-SIM-004",
+          "platform": "macOS",
+          "label": "Self-contained Python sources",
+          "status": "pass",
+          "evidence": "Week 2/3/4/6/7/8 packages present",
+          "blocking": true,
+          "passed": true
+        },
+        {
+          "code": "MAC-SIM-005",
+          "platform": "macOS",
+          "label": "Cross-platform CI job",
+          "status": "pass",
+          "evidence": "GitHub Actions workflow present",
+          "blocking": true,
+          "passed": true
+        }
+      ],
+      "decision": "SOURCE_COMPATIBLE_REAL_MACOS_EXECUTION_PENDING",
+      "limitations": [
+        "未在 Apple 硬件/Xcode 上构建或启动。",
+        "未执行 codesign、notarization、Gatekeeper 或 VoiceOver 实机验证。"
+      ],
+      "blocking_failures": 0
+    },
+    {
+      "platform": "Linux",
+      "evidence_class": "windows_hosted_source_and_contract_simulation",
+      "checks": [
+        {
+          "code": "LINUX-SIM-001",
+          "platform": "Linux",
+          "label": "Flutter target directory",
+          "status": "pass",
+          "evidence": "C:\\Amazon Internship\\Week8_Deliverables\\app\\offline_retrieval_ui\\linux",
+          "blocking": true,
+          "passed": true
+        },
+        {
+          "code": "LINUX-SIM-002",
+          "platform": "Linux",
+          "label": "Flutter project metadata",
+          "status": "pass",
+          "evidence": "pubspec.yaml present",
+          "blocking": true,
+          "passed": true
+        },
+        {
+          "code": "LINUX-SIM-003",
+          "platform": "Linux",
+          "label": "Shared Dart application",
+          "status": "pass",
+          "evidence": "lib/main.dart present",
+          "blocking": true,
+          "passed": true
+        },
+        {
+          "code": "LINUX-SIM-004",
+          "platform": "Linux",
+          "label": "Self-contained Python sources",
+          "status": "pass",
+          "evidence": "Week 2/3/4/6/7/8 packages present",
+          "blocking": true,
+          "passed": true
+        },
+        {
+          "code": "LINUX-SIM-005",
+          "platform": "Linux",
+          "label": "Cross-platform CI job",
+          "status": "pass",
+          "evidence": "GitHub Actions workflow present",
+          "blocking": true,
+          "passed": true
+        }
+      ],
+      "decision": "SOURCE_COMPATIBLE_REAL_LINUX_EXECUTION_PENDING",
+      "limitations": [
+        "未在 Linux 主机上执行 flutter build linux 或启动验证。"
+      ],
+      "blocking_failures": 0
+    }
+  ],
+  "truthfulness_notice": "Only Windows is real host build evidence. macOS and Linux results are source/configuration simulations until native CI or real-device artifacts are attached."
+}

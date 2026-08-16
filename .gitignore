@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv*/
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+app/offline_retrieval_ui/build/
+app/offline_retrieval_ui/coverage/
+
+# Generated builds and local indexes
+build/
+build_slim/
+dist/
+dist_slim/
+data/
+qa/
+final_submit_7_files/
+manager_submission/
+*.zip
+
+# IDE / operating system
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local models and potentially large datasets are intentionally excluded.
+models/
+datasets/

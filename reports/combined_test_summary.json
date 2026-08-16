@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-08-08",
+  "total_tests": 600,
+  "passed_tests": 600,
+  "failed_tests": 0,
+  "continuous_ids_tc_001_to_tc_600": true,
+  "core": {
+    "tests": 460,
+    "passed": true,
+    "elapsed_seconds": 67.923,
+    "coverage_percent": 95.82
+  },
+  "flutter": {
+    "tests": 140,
+    "passed": true,
+    "elapsed_seconds": 44.907,
+    "statements": 1942,
+    "covered": 1615,
+    "coverage_percent": 83.16
+  },
+  "all_passed": true
+}

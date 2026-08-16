@@ -1,0 +1,153 @@
+{
+  "generated_at": "2026-08-08",
+  "method": "real_local_production_model_assembly",
+  "models": {
+    "text": "bert-base-uncased-tflite",
+    "image": "MobileCLIP-S1 when image embedding succeeds"
+  },
+  "offline_only": true,
+  "files": 22,
+  "indexing": {
+    "discovered": 22,
+    "parsed": 22,
+    "vectors": 371,
+    "parse_failures": [],
+    "embedding_failures": []
+  },
+  "health_before": {
+    "status": "ready",
+    "mode": "integrated-local",
+    "offline_only": true,
+    "backend_name": "bert-base-uncased-tflite",
+    "vector_store": "ChromaVectorStore",
+    "indexed_records": 0,
+    "uptime_seconds": 0.001,
+    "embedding_cache": {
+      "hits": 0,
+      "misses": 0,
+      "evictions": 0,
+      "size": 0,
+      "capacity": 2048,
+      "requests": 0,
+      "hit_rate": 0.0
+    },
+    "query_cache": {
+      "hits": 0,
+      "misses": 0,
+      "evictions": 0,
+      "size": 0,
+      "capacity": 512,
+      "requests": 0,
+      "hit_rate": 0.0
+    },
+    "metrics": {
+      "index_operations": 0,
+      "indexed_files": 0,
+      "persisted_vectors": 0,
+      "search_operations": 0,
+      "search_cache_hits": 0,
+      "search_failures": 0,
+      "total_search_ms": 0.0,
+      "average_search_ms": 0.0
+    },
+    "issues": []
+  },
+  "health_after": {
+    "status": "ready",
+    "mode": "integrated-local",
+    "offline_only": true,
+    "backend_name": "bert-base-uncased-tflite",
+    "vector_store": "ChromaVectorStore",
+    "indexed_records": 371,
+    "uptime_seconds": 24.561,
+    "embedding_cache": {
+      "hits": 0,
+      "misses": 377,
+      "evictions": 0,
+      "size": 377,
+      "capacity": 2048,
+      "requests": 377,
+      "hit_rate": 0.0
+    },
+    "query_cache": {
+      "hits": 0,
+      "misses": 4,
+      "evictions": 0,
+      "size": 4,
+      "capacity": 512,
+      "requests": 4,
+      "hit_rate": 0.0
+    },
+    "metrics": {
+      "index_operations": 1,
+      "indexed_files": 22,
+      "persisted_vectors": 371,
+      "search_operations": 4,
+      "search_cache_hits": 0,
+      "search_failures": 0,
+      "total_search_ms": 415.058,
+      "average_search_ms": 103.764
+    },
+    "issues": []
+  },
+  "queries": [
+    {
+      "query": "Norman conquest of England",
+      "mode": "text",
+      "hits": 5,
+      "top_files": [
+        "0001_Normans.txt",
+        "0011_Normans.txt",
+        "0018_Normans.txt",
+        "0001_Normans.txt",
+        "0018_Normans.txt"
+      ],
+      "expected_file": null,
+      "expected_file_rank": null
+    },
+    {
+      "query": "Abraham Lincoln president",
+      "mode": "text",
+      "hits": 5,
+      "top_files": [
+        "005_Abraham_Lincoln.txt",
+        "005_Abraham_Lincoln.txt",
+        "005_Abraham_Lincoln.txt",
+        "005_Abraham_Lincoln.txt",
+        "005_Abraham_Lincoln.txt"
+      ],
+      "expected_file": null,
+      "expected_file_rank": null
+    },
+    {
+      "query": "an airplane parked at an airport gate",
+      "mode": "image",
+      "hits": 5,
+      "top_files": [
+        "000000348881.jpg",
+        "rvl_cdip_n_test_00005_budget.png",
+        "rvl_cdip_n_test_00003_budget.png",
+        "000000397133.jpg",
+        "rvl_cdip_n_test_00001_budget.png"
+      ],
+      "expected_file": "000000348881.jpg",
+      "expected_file_rank": 1
+    },
+    {
+      "query": "budget document",
+      "mode": "image",
+      "hits": 5,
+      "top_files": [
+        "rvl_cdip_n_test_00004_budget.png",
+        "rvl_cdip_n_test_00002_budget.png",
+        "000000386912.jpg",
+        "rvl_cdip_n_test_00005_budget.png",
+        "rvl_cdip_n_test_00000_budget.png"
+      ],
+      "expected_file": "rvl_cdip_n_test_00004_budget.png",
+      "expected_file_rank": 1
+    }
+  ],
+  "elapsed_seconds": 25.794,
+  "passed": true
+}

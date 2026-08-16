@@ -1,0 +1,124 @@
+{
+  "coverage_percent": 95.82,
+  "covered": 1466,
+  "statements": 1530,
+  "threshold_percent": 90.0,
+  "threshold_met": true,
+  "files": {
+    "src\\week4_retrieval\\keyword.py": {
+      "statements": 60,
+      "covered": 58,
+      "coverage_percent": 96.67
+    },
+    "src\\week4_retrieval\\metrics.py": {
+      "statements": 58,
+      "covered": 57,
+      "coverage_percent": 98.28
+    },
+    "src\\week4_retrieval\\models.py": {
+      "statements": 96,
+      "covered": 96,
+      "coverage_percent": 100.0
+    },
+    "src\\week4_retrieval\\ranking.py": {
+      "statements": 67,
+      "covered": 67,
+      "coverage_percent": 100.0
+    },
+    "src\\week4_retrieval\\repository.py": {
+      "statements": 50,
+      "covered": 50,
+      "coverage_percent": 100.0
+    },
+    "src\\week4_retrieval\\service.py": {
+      "statements": 66,
+      "covered": 66,
+      "coverage_percent": 100.0
+    },
+    "src\\week6_integration\\bridge.py": {
+      "statements": 78,
+      "covered": 70,
+      "coverage_percent": 89.74
+    },
+    "src\\week6_integration\\cache.py": {
+      "statements": 54,
+      "covered": 51,
+      "coverage_percent": 94.44
+    },
+    "src\\week6_integration\\embedding.py": {
+      "statements": 88,
+      "covered": 78,
+      "coverage_percent": 88.64
+    },
+    "src\\week6_integration\\models.py": {
+      "statements": 76,
+      "covered": 76,
+      "coverage_percent": 100.0
+    },
+    "src\\week6_integration\\performance.py": {
+      "statements": 100,
+      "covered": 95,
+      "coverage_percent": 95.0
+    },
+    "src\\week6_integration\\security.py": {
+      "statements": 79,
+      "covered": 74,
+      "coverage_percent": 93.67
+    },
+    "src\\week6_integration\\service.py": {
+      "statements": 128,
+      "covered": 120,
+      "coverage_percent": 93.75
+    },
+    "src\\week7_release\\compliance.py": {
+      "statements": 64,
+      "covered": 58,
+      "coverage_percent": 90.62
+    },
+    "src\\week7_release\\documentation.py": {
+      "statements": 51,
+      "covered": 47,
+      "coverage_percent": 92.16
+    },
+    "src\\week7_release\\models.py": {
+      "statements": 147,
+      "covered": 147,
+      "coverage_percent": 100.0
+    },
+    "src\\week7_release\\preflight.py": {
+      "statements": 58,
+      "covered": 50,
+      "coverage_percent": 86.21
+    },
+    "src\\week7_release\\service.py": {
+      "statements": 39,
+      "covered": 37,
+      "coverage_percent": 94.87
+    },
+    "src\\week8_delivery\\datasets.py": {
+      "statements": 41,
+      "covered": 41,
+      "coverage_percent": 100.0
+    },
+    "src\\week8_delivery\\lineage.py": {
+      "statements": 21,
+      "covered": 19,
+      "coverage_percent": 90.48
+    },
+    "src\\week8_delivery\\models.py": {
+      "statements": 67,
+      "covered": 67,
+      "coverage_percent": 100.0
+    },
+    "src\\week8_delivery\\platforms.py": {
+      "statements": 21,
+      "covered": 21,
+      "coverage_percent": 100.0
+    },
+    "src\\week8_delivery\\readiness.py": {
+      "statements": 21,
+      "covered": 21,
+      "coverage_percent": 100.0
+    }
+  }
+}

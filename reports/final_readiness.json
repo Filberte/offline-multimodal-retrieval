@@ -1,0 +1,90 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-08-08",
+  "gates": [
+    {
+      "code": "W8-G01",
+      "label": "Week 1–8 contribution lineage",
+      "passed": true,
+      "evidence": "All eight weeks and feed-forward links are present",
+      "blocking": true
+    },
+    {
+      "code": "W8-G02",
+      "label": "Week 1 datasets available",
+      "passed": true,
+      "evidence": "squad:200, coco:50, rvl_cdip:50, wikipedia:100",
+      "blocking": true
+    },
+    {
+      "code": "W8-G03",
+      "label": "Cumulative automated suite",
+      "passed": true,
+      "evidence": "600/600; continuous=True",
+      "blocking": true
+    },
+    {
+      "code": "W8-G04",
+      "label": "Python core coverage",
+      "passed": true,
+      "evidence": "95.82%",
+      "blocking": true
+    },
+    {
+      "code": "W8-G05",
+      "label": "Flutter source coverage",
+      "passed": true,
+      "evidence": "83.16%",
+      "blocking": true
+    },
+    {
+      "code": "W8-G06",
+      "label": "Windows production baseline",
+      "passed": true,
+      "evidence": "GO",
+      "blocking": true
+    },
+    {
+      "code": "W8-G07",
+      "label": "macOS/Linux source contracts",
+      "passed": true,
+      "evidence": "SOURCE_COMPATIBLE_REAL_MACOS_EXECUTION_PENDING; SOURCE_COMPATIBLE_REAL_LINUX_EXECUTION_PENDING",
+      "blocking": true
+    },
+    {
+      "code": "W8-G08",
+      "label": "Final manager documents",
+      "passed": true,
+      "evidence": "4 required files",
+      "blocking": true
+    },
+    {
+      "code": "W8-G09",
+      "label": "Public GitHub publication",
+      "passed": false,
+      "evidence": "Prepared locally; publication requires owner authorization",
+      "blocking": false
+    },
+    {
+      "code": "W8-G10",
+      "label": "Five-minute demo video",
+      "passed": false,
+      "evidence": "Recording is assigned to the project owner on Windows",
+      "blocking": false
+    }
+  ],
+  "decision": "GO",
+  "blocking_failures": 0,
+  "external_actions": [
+    "项目所有者按录制脚本完成 5 分钟 Windows 演示视频并放入 final_submit。",
+    "项目所有者确认无敏感信息后创建/选择公开 GitHub 仓库并推送准备好的源码。",
+    "Apple/Linux runner 生成的构建产物应替换模拟证据后再声明对应平台实机发布。"
+  ],
+  "claim_boundary": {
+    "windows": "real host build and execution evidence",
+    "macos": "Windows-hosted source/contract simulation; native artifact pending",
+    "linux": "Windows-hosted source/contract simulation; native artifact pending",
+    "github": "repository-ready package; public push pending owner authorization",
+    "video": "script and runbook complete; final Windows recording pending owner"
+  }
+}
