@@ -18,8 +18,8 @@ build/
 build_slim/
 dist/
 dist_slim/
-data/
-qa/
+/data/
+/qa/
 final_submit_7_files/
 manager_submission/
 *.zip
@@ -31,5 +31,5 @@ manager_submission/
 Thumbs.db
 
 # Local models and potentially large datasets are intentionally excluded.
-models/
+/models/
 datasets/
