@@ -10,6 +10,23 @@ Windows is the real host build and demonstration target. The final demo uses exa
 
 macOS and Linux source/configuration checks executed on Windows are simulations only. They are never presented as native builds, signatures, notarization, VoiceOver sessions, or real-machine launch evidence. The included GitHub Actions workflow is the authorized path to create native artifacts on `windows-latest`, `macos-latest`, and `ubuntu-latest` after the repository owner publishes the source.
 
+## Demo video
+
+The five-minute Windows demonstration follows the W8-DEMO-04 runbook (four fixed
+queries over the Week 1 datasets, accessibility walkthrough, evidence summary).
+
+- Video link: _pending — will be added here after the owner records it._
+
+## Governance
+
+- [Scope decisions and deviation record](docs/SCOPE_DECISIONS_AND_WAIVERS.md) —
+  every approved deviation from the original specification (platform scope,
+  usability-testing scope, dataset substitution, parsing/inference stack, coverage
+  accounting), with rationale and sign-off status.
+- [Manual accessibility test checklist](docs/ACCESSIBILITY_MANUAL_TEST_CHECKLIST.md) —
+  NVDA screen-reader, keyboard-only, and display-adaptation test procedure that
+  complements the automated WCAG 2.1 AA audit.
+
 ## Release gates
 
 - 600 continuously numbered automated tests (`TC-001`–`TC-600`).
